@@ -34,11 +34,54 @@ public class SortBitArray {
 
     public static void main(String[] args) {
         
-        int arr[] = {0,1,0,1,0,1};
-        sortBitArray(arr);
+        int arr[] = {0,1,0,1,0,1,0,0,0,1,1,1,0};
+        System.out.println("Before Sorting");
+        printArray(arr);
+        System.out.println("After sorting");
+        sortBitArrayTwoPointer(arr);
+        printArray(arr);
+
+
+    }
+
+    // select the left pointer element
+    // select the right pointer element
+    // if left pointer element is > right then swap
+    // do it while left < right
+    public static void sortBitArrayTwoPointer(int arr[])
+    {
+        int left = 0;
+        int right = arr.length-1;
+        
+        while(left <= right)
+        {
+            if(arr[left] ==1 && arr[right] ==0)
+            {
+                swap(arr, left, right);
+            }
+            if(arr[left] == 0)
+            {
+                left++;
+            }
+            if(arr[right] == 1){
+                right--;
+
+            }
+            
+        }
+
+    }
+    public static void swap(int arr[], int a, int b)
+    {
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
+    public static void printArray(int arr[])
+    {
         for(int i:arr)
         {
-            System.out.println(i);
+            System.out.printf("%d ",i);
         }
     }
 }
