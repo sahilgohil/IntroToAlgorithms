@@ -99,7 +99,7 @@ public class SpiralPrint {
                         {9,10,11,12},
                         {1,4,7,9}
         };
-        // spiralPrint(mat);
+        spiralPrint(mat);
         makeSpiralSquareMatrix(4);
     }
     

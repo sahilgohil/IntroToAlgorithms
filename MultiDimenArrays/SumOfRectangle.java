@@ -3,7 +3,6 @@ package MultiDimenArrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.lang.model.element.Element;
 
 public class SumOfRectangle {
 

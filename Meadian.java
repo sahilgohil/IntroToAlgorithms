@@ -1,5 +1,3 @@
-import java.util.Arrays;
-import java.util.List;
 
 public class Meadian {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
