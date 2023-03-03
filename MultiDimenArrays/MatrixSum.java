@@ -23,15 +23,8 @@ public class MatrixSum {
                 sum[i][j] = a[i][j] + b[i][j];
             }
         }
-        for(int i[]:sum)
-        {
-            for(int j:i)
-            {
-                System.out.print(j+" ");
-            }
-            System.out.println();
-
-        }
+        
+        Matrix.printMatrix(sum);
 
         
     }
