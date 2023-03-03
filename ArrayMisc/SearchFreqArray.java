@@ -39,6 +39,8 @@ public class SearchFreqArray {
 
             q--;
         }
+        input.close();
+        inputText.close();
 
     }
     
