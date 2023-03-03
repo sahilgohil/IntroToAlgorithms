@@ -1,3 +1,4 @@
+package Leetcode;
 
 public class Meadian {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
