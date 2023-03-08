@@ -3,7 +3,6 @@ package Recursion;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
 public class PrintArray {
@@ -54,7 +53,7 @@ public class PrintArray {
         }
             linearSearchArray(arr, idx+1, key);
     }
-    public static void findAllTheIndices(int arr[],int idx, int key )
+    public static void findAllTheIndices(int arr[],int idx, int key)
     {
         if(idx > arr.length -1)
         {
